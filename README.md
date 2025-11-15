@@ -18,3 +18,20 @@ It contains:
 - For **mobile (React Native)**: start with `/design-tokens`, `/ui`, `/platforms/native-react`.
 
 All changes should go through pull requests so we keep a clear history of decisions.
+
+## Repos & Tools
+
+- Figma / Figma Make: primary UI and interaction design
+- Lovable: primary web app implementation (React + Supabase)
+- GitHub:
+  - kahu-master-system (this repo): spec, tokens, contracts
+  - kahu-web: Lovable app code
+
+Figma Make and Lovable should both treat this repo as the canonical source for:
+
+- Design tokens (`/design-tokens`, `/design-system.json`)
+- Domain model (`/domain-model`)
+- UI component + pattern specs (`/ui`)
+- API + integration contracts (`/api`)
+- AI prompts (`/prompts`)
+- Platform mappings (`/platforms`)
