@@ -278,8 +278,8 @@
         "emerald": {
           "angle": 90,
           "stops": [
-            { "color": "$colors.primary.emerald.500", "opacity": 1, "position": 0 },
-            { "color": "$colors.primary.emerald.600", "opacity": 1, "position": 100 }
+            { "color": "$colors.primary.emerald.600", "opacity": 1, "position": 0 },
+            { "color": "$colors.primary.emerald.700", "opacity": 1, "position": 100 }
           ]
         },
         "amber": {
