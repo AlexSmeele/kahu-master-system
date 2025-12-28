@@ -278,8 +278,8 @@
         "emerald": {
           "angle": 90,
           "stops": [
-            { "color": "$colors.primary.emerald.600", "opacity": 1, "position": 0 },
-            { "color": "$colors.primary.emerald.700", "opacity": 1, "position": 100 }
+            { "color": "$colors.primary.emerald.500", "opacity": 1, "position": 0 },
+            { "color": "$colors.primary.emerald.600", "opacity": 1, "position": 100 }
           ]
         },
         "amber": {
@@ -392,7 +392,45 @@
       "bottom": 34,
       "left": 0,
       "right": 0,
-      "statusBar": 54
+      "statusBar": 54,
+      "devices": {
+        "iphone15Pro": {
+          "top": 59,
+          "bottom": 34,
+          "comment": "Dynamic Island devices"
+        },
+        "iphone14": {
+          "top": 47,
+          "bottom": 34,
+          "comment": "Notch devices (iPhone 12-14)"
+        },
+        "iphoneSE": {
+          "top": 20,
+          "bottom": 0,
+          "comment": "Flat-top devices with home button"
+        },
+        "androidPunch": {
+          "top": 24,
+          "bottom": 0,
+          "comment": "Android hole-punch camera"
+        },
+        "androidFlat": {
+          "top": 24,
+          "bottom": 0,
+          "comment": "Android rectangular display"
+        }
+      }
+    },
+    "header": {
+      "baseHeight": 56,
+      "totalHeight": {
+        "iphone15Pro": 115,
+        "iphone14": 103,
+        "iphoneSE": 76,
+        "androidPunch": 80,
+        "androidFlat": 80,
+        "comment": "baseHeight + device-specific safeArea.top"
+      }
     }
   },
   "typography": {
@@ -1080,6 +1118,27 @@
           "iconSize": 28,
           "gap": "$layout.gap.xl"
         }
+      }
+    },
+    "timeline": {
+      "dot": {
+        "size": 32,
+        "innerSize": 12,
+        "backgroundColor": "$colors.primary.emerald.500",
+        "innerColor": "$mode.background.primary"
+      },
+      "line": {
+        "width": 2,
+        "position": 16,
+        "gradient": {
+          "from": "$colors.primary.emerald.500",
+          "via": "rgba(16, 185, 129, 0.5)",
+          "to": "rgba(16, 185, 129, 0.3)"
+        }
+      },
+      "spacing": {
+        "dotToCard": 16,
+        "betweenEvents": 12
       }
     },
     "input": {
